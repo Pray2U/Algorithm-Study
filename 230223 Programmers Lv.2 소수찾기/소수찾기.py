@@ -1,5 +1,6 @@
 from itertools import permutations
 
+
 # Programmers 58.3/100
 def solution(numbers):
     # 1차 시도
