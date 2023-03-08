@@ -25,6 +25,7 @@ def solution(s):
             answer += 1
     return answer
 
+
 print(solution("[](){}")) #3
 print(solution("}]()[{")) #2
 print(solution("[)(]")) #0

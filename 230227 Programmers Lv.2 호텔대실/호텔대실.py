@@ -2,12 +2,9 @@ import heapq as h
 
 
 def solution(book_time):
-    def convertExpression(x1,x2):
-        return (int(x1[:2])*60 + int(x1[3:]), int(x2[:2])*60 + int(x2[3:]))
-    
     answer = 1
     book_time_sort = sorted(book_time)
-    book_time_list = [convertExpression(elem[0], elem[1]) for elem in book_time_sort]
+    book_time_list = [(int(elem_x[:2])*60 + int(elem_x[3:]), int(elem_y[:2])*60 + int(elem_y[3:])) for elem_x, elem_y in book_time_sort]
     
     heap = []
     for elem_start, elem_end in book_time_list:
