@@ -1,6 +1,7 @@
 from collections import Counter
 def solution(k, tangerine):
     b = []
+
     count = 0
     answer = 0
     if k == 1:
