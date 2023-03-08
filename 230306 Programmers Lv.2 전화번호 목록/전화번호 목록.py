@@ -1,3 +1,15 @@
+# 1차시도 : set copy를 사용한 이중 for문 순회
+# def solution(phone_book):
+#     targets = set(phone_book)
+#     for elem in targets:
+#         tmp = targets.copy()
+#         tmp.remove(elem)
+#         for target in tmp:
+#             if target in elem:
+#                 return False
+#     return True
+
+# 2차시도 : Hashing을 이용한 이중 for문 순회
 def solution(phone_book):
     board = { number:1 for number in phone_book }
     
