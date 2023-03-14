@@ -1,1 +1,0 @@
-Programmers Lv.2 소수찾기
